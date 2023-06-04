@@ -1,7 +1,5 @@
 # Process
 
-Lesson 1
-
 # features covered
 
 margins
