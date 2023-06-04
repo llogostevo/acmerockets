@@ -68,6 +68,8 @@ block display
 figure element html
 
 # other techniques
+
+Creating a section that takes the full view port on a screen
 - adding a custom class using @layer utilities
 - making a media query from the class in tailind.config.js - using extend and adding a name for hte screen sizes
 - calculat
