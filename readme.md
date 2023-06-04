@@ -2,6 +2,8 @@
 
 # Setup Tailwind (2023 - May)
 
+If setting up a totally new project the following steps can be carried out
+
 create folder structure
  - root project folder
  - - build
@@ -63,4 +65,12 @@ shadow - drop shadow
 rounded
 hidden display
 block display
+figure element html
+
+# other techniques
+- adding a custom class using @layer utilities
+- making a media query from the class in tailind.config.js - using extend and adding a name for hte screen sizes
+- calculat
+
+
 
