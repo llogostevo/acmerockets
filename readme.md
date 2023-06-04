@@ -1,17 +1,26 @@
 # Process
 
-# setup tailwind
+# Setup Tailwind (2023 - May)
 
 create folder structure
-
-tailwind.config.js
+ - root project folder
+ - - build
+ - - - css
+ - - - img
+ - - src
+ - tailwind.config.js
+ - readme.md
 
 - Create a project folder.
 - Navigate to the project folder in the terminal.
-- Initialize a new npm project by running: npm init -y.
-- Install Tailwind CSS and its dependencies by running: npm install tailwindcss postcss autoprefixer.
-- Generate a Tailwind CSS configuration file by running: npx tailwindcss init.
-- Create a CSS file (e.g., styles.css) in your project folder.
+- Initialize a new npm project by running: `npm init -y`
+- Install Tailwind CSS and its dependencies by running: 
+`npm install -D tailwindcss@latest postcss@latest autoprefixer@latest`
+- Generate a Tailwind CSS configuration file by running:
+ `npx tailwindcss init`.
+ - edit tailwind.config.js to include, (create file inside root project if not there)
+`content: ["./build/*.html"],`
+- Create a CSS folder inside a folder called `build` file (e.g., styles.css) in your project folder.
 - Add the following code to styles.css:
 `@import 'tailwindcss/base';
 @import 'tailwindcss/components';
@@ -19,7 +28,7 @@ tailwind.config.js
 
 - Create an HTML file (e.g., index.html) in your project folder.
 - Link the styles.css file and any other necessary files (e.g., JavaScript) in index.html.
-- Build the CSS file by running: npx tailwindcss build styles.css -o output.css.
+- Build the CSS file by running: `npx tailwindcss build styles.css -o output.css`.
 - Include the compiled output.css file in your HTML file.
 - Start a development server to preview your project.
 - edit package.json to include
@@ -27,8 +36,12 @@ tailwind.config.js
     "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
     "prettier": "npx prettier --write **/*.html"
   },`
-- edit tailwind.config.js to include
-`content: ["./build/*.html"],`
+
+  - test tailwind works on the server
+  - create a `.gitignore` file and include
+  `node_modules`
+  - setup git and connect to github
+
 
 # styles used
 margins
